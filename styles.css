@@ -141,7 +141,7 @@ body{
   text-align: left;
   color: white;
   border-top: 3px solid #9aa8b3;
-  height: 300px;
+  height: 330px;
   padding-top: 20px;
   padding-left: 60px;
 }
@@ -157,11 +157,19 @@ body{
   padding-right: 50px;
 }
 
+.about img{
+    float: right;
+    max-width: 600px;
+    padding-right: 60px;
+    display: inline;
+    margin-bottom: 20px;
+}
+
 .portfolio{
   background-color: #2bb4a0;
   text-align: left;
   color: white;
-  height: 500px;
+  height: 550px;
   padding-top: 20px;
   padding-left: 60px;
   border-bottom: 3px solid #9aa8b3;
@@ -169,11 +177,17 @@ body{
 
 .portfolio h2{
     color: #4b4c4d;
+}
+
+.portfolio img{
+  padding-right: 12px;
 
 }
 
 .footer{
   background-color: #FFFFFF;
+  height: 30px;
+  color: white;
 }
 
 .footer img{
