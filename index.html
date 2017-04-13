@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+      <title>Madeleine</title>
+      <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <body>
+
+  <div class="header">
+
+    <div class="logo">
+      <img src="images/logo.png">
+      <p>MADELEINE PRESS</p>
+    </div>
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="Menubtn">
+        <span onclick="openNav()">Menu</span>
+      </div>
+
+    <script>
+
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+      }
+    </script>
+
+    </div>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="images/banner2.png" style="width:100%">
+      <div class="text">Paper Plane Website</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="images/banner.png" style="width:100%">
+      <div class="text">Singolo Website</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="images/banner3.png" style="width:100%">
+      <div class="text">Personal Website Design</div>
+    </div>
+
+  </div>
+
+  <script>
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex> slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 5000);
+  }
+
+  </script>
+
+  <div class="about">
+    <h2>About My Websites</h2>
+
+    <p>This year for Web and Mobile Media production we have coded and created websites using HTML, CSS, and Javascript from scratch. Here are a couple of websites that I have made using the program Atom along with Github. While I have dabbled in HTML writing and CSS, Javascript was new to me and so I have added it into this website so test my skills.</p>
+
+  </div>
+
+  <div class="portfolio">
+
+    <h2>Portfolio</h2>
+
+  </div>
+
+  </body>
+
+<div class="footer">
+  <img src="images/media.png" width="10%">
+</div>
+
+</html>
